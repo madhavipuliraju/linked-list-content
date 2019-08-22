@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Linked List</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <style>
+        .exp {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="exp" title="Linked List">
+        <div class="longt">
+            <h1 class="hlongt">Introduction to Linked List Experiment</h1>
+        </div>
+
+        <div class="preamble">
+            <div class="art txt" title="Estimation">
+                <div class="longt">
+                    <h2 class="hlongt">Estimated Time</h2>
+                </div>
+                <div class="art-body">
+                    <p>1 hour</p>
+                </div>
+            </div>
+
+            <div class="art req" title="Introduction">
+                <div class="longt">
+                    <h2 class="hlongt">A Short Introduction to Experiment..!</h2>
+                </div>
+                <div class="description">
+                    <p>Video introduction to Linked Lists experiment should be displayed here..!
+                    </p>
+                </div>
+            </div>
+
+            <div class="art txt" title="Prerequisites">
+                <div class="longt">
+                    <h2 class="hlongt">Prerequisites of the Experiment</h2>
+                </div>
+                <div class="art-body">
+                    <ul>
+                        <li>
+                            The learner is expected to know at least basics of following topics to understand experiment properly.
+                            <ul>
+                                <li>
+                                    <a href="https://www.geeksforgeeks.org/introduction-to-arrays/">Arrays</a>
+                                </li>
+                                <li>
+                                    <a href="https://en.wikipedia.org/wiki/Struct_(C_programming_language)">Structures</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.studytonight.com/c/pointers-in-c.php">Pointers</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/">Basic Complexity Analysis</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.w3schools.in/difference-in-static-and-dynamic-memory-allocation/">Memory Representation</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html">Linked List Basics</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>And above all, a curiosity to learn and explore..!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="art txt" title="Learning Objectives">
+                <div class="longt">
+                    <h2 class="hlongt">Learning Objectives of the Experiment</h2>
+                </div>
+                <div class="art-body">
+                    <p>In this experiment on Linked Lists, you will learn following topics:
+                    </p>
+                    <ul>
+                        <li>Introduction
+                            <ul>
+                                <li>What is linked list?</li>
+                                <li>How is linked list stored in memory?</li>
+                            </ul>
+                        </li>
+                        <li>Types of Linked Lists(Operations and time complexity analysis of each type)
+                            <ul>
+                                <li>Singly linked List</li>
+                                <li>Doubly Linked List</li>
+                                <li>Circular Linked List</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="art req" title="Structure">
+                <div class="longt">
+                    <h1 class="hlongt">Structure of the Experiment</h1>
+                </div>
+                <div class="art-body">
+                    <p>Image of Structure of the LinkedList experiment to be displayed here.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="lu" title="Pre-Test">
+            <div class="longt">
+                <h1 class="hlongt">Pre-Test of the Experiment</h1>
+            </div>
+
+            <div class="preamble">
+                <div class="art txt" title="Estimation">
+                    <div class="longt">
+                        <h3 class="hlongt">Estimated Time</h3>
+                    </div>
+                    <div class="art-body">
+                        <p>15 min</p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Introduction">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Pre-Test of the Experiment</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>Read the questions in the quiz section and select the correct option from the ones provided. Please note that some questions may have more than one correct response.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz" title="Pre-test Quiz">
+                <div class="longt">
+                    <h2 class="hlongt">A Quiz with Multiple Choice Questions</h2>
+                </div>
+
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question1">
+                            <div class="art-body">
+                                <p>Q1. Which of these best describes an array?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c1">
+                                <div class="art-body">
+                                    <p>(A) A data structure that shows a hierarchical behavior</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c2">
+                                <div class="art-body">
+                                    <p>(B) Container of objects of similar types</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c3">
+                                <div class="art-body">
+                                    <p>(C) Container of objects of mixed types.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c4">
+                                <div class="art-body">
+                                    <p>(D) All of the mentioned</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Explanation of question 1 for the right answer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question2">
+                            <div class="art-body">
+                                <p>Q2. Write complexity of insertion at any point on an array</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c1">
+                                <div class="art-body">
+                                    <p>(A) O(N)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c2">
+                                <div class="art-body">
+                                    <p>(B) O(N^2)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c3">
+                                <div class="art-body">
+                                    <p>(C) O(NLogN)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c4">
+                                <div class="art-body">
+                                    <p>(D) None of these</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Explanation of question 2 for the right answer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question3">
+                            <div class="art-body">
+                                <p>Q3. Pick incorrect options</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c1">
+                                <div class="art-body">
+                                    <p>(A) If structure contains 3 types of data then three pointers are required for that structure
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c2">
+                                <div class="art-body">
+                                    <p>(B) One variable can be bound to many structures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c3">
+                                <div class="art-body">
+                                    <p>(C) Contents of a structure are stored in contiguous memory</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c4">
+                                <div class="art-body">
+                                    <p>(D) None of these</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Explanation of question 3 for the right answer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question4">
+                            <div class="art-body">
+                                <p>Q4. The reason for using pointers in a C program is</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c1">
+                                <div class="art-body">
+                                    <p>(A) Pointers allow different functions to share and modify their local variables</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c2">
+                                <div class="art-body">
+                                    <p>(B) To pass large structures so that complete copy of the structure can be avoided
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c3">
+                                <div class="art-body">
+                                    <p>(C) Pointers enable complex “linked” data structures like linked lists and binary trees
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c4">
+                                <div class="art-body">
+                                    <p>(D) All of the above</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Explanation of question 4 for the right answer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question5">
+                            <div class="art-body">
+                                <p>Q5. Pick out incorrect statement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c1">
+                                <div class="art-body">
+                                    <p>(A) Linked list is a data structure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c2">
+                                <div class="art-body">
+                                    <p>(B) Linked list is made up of structures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c3">
+                                <div class="art-body">
+                                    <p>(C) The nodes of linked list will always be stored contiguously</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c4">
+                                <div class="art-body">
+                                    <p>(D) Linked lists do not allow random access</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Explanation of question 5 for the right answer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="lu" title="Basics">
+            <div class="longt">
+                <h1 class="hlongt">Basics of Linked List</h1>
+            </div>
+
+            <div class="preamble">
+                <div class="art txt" title="Estimation">
+                    <div class="longt">
+                        <h2 class="hlongt">Estimated Time</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>15 min</p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="What is Linked List?">
+                    <div class="longt">
+                        <h2 class="hlongt">Definition of Linked List</h2>
+                    </div>
+                    <div class="art-body">
+                        Linked list is a linear data structure where each data is a separate object (of same data type). Linked list objects do not occupy the contiguous memory location as compared to the array which is also a linear data structure where elements have contiguous
+                        memory allocation, instead linked lists are linked using pointers. Elements of the linked lists are known as Nodes.
+                        <ol>There are three types of linked lists:
+                            <li>Singly Linked List</li>
+                            <li>Doubly Linked List</li>
+                            <li>Circular Linked List</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Need for linked list">
+                    <div class="longt">
+                        <h2 class="hlongt">Need for linked list</h2>
+                    </div>
+                    <div class="art-body">
+                        <h2>1. Memory Management:</h2> When you declare an array, the size of the array is fixed. You cannot change the size of the array. And there might be a case where you are not able to consume all the space that you have reserved as
+                        an array that means you are wasting a part of your memory or there might be a case where you have consumed all of the space that was reserved as an array and still you are not able to store your complete data. Linked List manages
+                        the memory efficiently. Size of the Linked list if flexible. Linked List consume only that much space which is required to store the data. Whenever a data is to be stored in the Linked List, linked list allocates the memory at
+                        the same time so we shouldn’t worry that our space may remain un-utilized. And whenever a data is deleted from the Linked List it frees the memory which was consumed by the deleting data and thus allows the memory to be reused,
+                        which is not possible with arrays.
+
+                        <h2>2. Faster Processing:</h2> To delete an element from an array we need to shift the elements of the array. In the worst case, suppose we have an array of size n. Now we want to delete the first element of the array that means we
+                        need to shift the (n-1) elements of the array to the left which have time complexity of O(n). Also we waste the memory that was occupied by the rightmost element. On the other hand, deleting an element from Linked List is quite
+                        simple, we just need to change the address hold by the two pointers which have O(1) time complexity. Also the memory occupied by this element can be freed so that it can be re-utilized.
+                    </div>
+                </div>
+
+                <div class="art txt" title="Single Linked List">
+                    <div class="longt">
+                        <h2 class="hlongt">Single Linked List</h2>
+                    </div>
+                    <div class="art-body">
+                        <ul>Each Node of the singly list consists of two parts:
+                            <li>First part of the singly linked list Node contains the information to be stored.
+                            </li>
+                            <li>Second part of the singly linked list Node contains the address of either its next Node or it previous Node and is a pointer.</li>
+                        </ul>
+                        <b>Head</b> is a pointer that store the address of the first Node of the list.
+                        <b>Tail</b> is also a pointer that holds the address of the last Node of the list. <br> Each Node of the singly linked list store the address of its next Node and in that way all the data of the singly linked list gets linked to
+                        each other.
+                    </div>
+                </div>
+
+                <div class="art req" title="Representation of SLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Representation of Linked List Experiment</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Data Type used in Singly Linked List">
+                    <div class="longt">
+                        <h2 class="hlongt">Data Type used in Singly Linked List</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>To implement a singly linked list we first need a data type( type of the data that is to be stored by the list).</p>
+                        <p>Suppose we want to store the information of students where each student have a name, roll number as Singly Linked List.</p>
+                        <p>Let us declare a structure named Node for this.<br> Our structure will contain the fields name, roll number, which will be the first part of the Node. Second part of the Node contains a pointer that holds the address of its next
+                            Node.
+                        </p>
+                        <h3>Example</h3>
+                        struct Node{<br> // First part of the Node<br> // information that is to be stored<br> char name[50]; // name of the student <br>char rollNumber[10]; // roll number of the student<br> // second part of the Node<br> Node *next;
+                        // pointer holds the address of the next Node<br> };
+                    </div>
+                </div>
+
+                <div class="art req" title="What is Linked List?">
+                    <div class="longt">
+                        <h2 class="hlongt">What is Linked List?</h2>
+                    </div>
+                    <div class="description">
+                        <p>A linked list is a linear collection of data elements.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art req" title="Linked List vs Array">
+                    <div class="longt">
+                        <h2 class="hlongt">Linked List vs Array</h2>
+                    </div>
+                    <div class="description">
+                        <p>Linked List vs Array </p>
+                    </div>
+                </div>
+
+                <div class="art req" title="Types of Linked List">
+                    <div class="longt">
+                        <h2 class="hlongt">Types of Linked List</h2>
+                    </div>
+                    <div class="description">
+                        Image of types of Linked List experiment
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="lu" title="Singly Linked List">
+            <div class="longt">
+                <h1 class="hlongt">Singly Linked List Insertion</h1>
+            </div>
+
+            <div class="preamble">
+                <div class="art txt" title="Estimation">
+                    <div class="longt">
+                        <h2 class="hlongt">Estimated Time</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>15 min</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="SLL Introduction Insertion">
+                <div class="longt">
+                    <h1 class="hlongt">Introduction to Singly Linked List</h1>
+                </div>
+
+                <div class="art txt" title="Implementation">
+                    <div class="longt">
+                        <h2 class="hlongt">Implementation of Singly Linked List</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>Now we have data type in our hand that our singly linked list is going to store.</p>
+                        <p>Next we need two pointers that mark the start and end of our singly linked list. Let us declare them:</p>
+                        <p>struct Node *head = NULL;<br> struct Node *tail = NULL;</p>
+                        <p>We have initialized these pointers with null to indicate that they do not hold the address of any data yet i.e. no data has been stored in the list yet.</p>
+                        <p>Now we are ready to insert the data in our singly linked list.<br> First we allocate memory to store data as:</p>
+                        <p>struct Node *newNode = (Node*)malloc(sizeof(struct Node));</p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Insertion">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of elements into Singly Linked List</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>Two cases may arise when we want to insert data at the front.</p>
+                        <p><b>Case – 1 :</b> When the list is empty i.e. head = NULL</p>
+                        <p>Here we can simply do head = tail = newNode(pointer)</p>
+                        <ol type="a"><b>Case – 2 :</b> When list contains some entries i.e. head != NULL
+                            <li>Insertion at Front</li>
+                            <li>Insertion at End</li>
+                            <li>Insertion after a Node</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art req" title="Insertion (1) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of node in Linked List (Case 1)</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Insertion (2a)">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of new node into Singly Linked List at front</h2>
+                    </div>
+                    <div class="art-body">
+                        <ol type="i">Here the changes we made are:
+                            <li>Set the next of <b>newNode</b> = <b>head</b></li>
+                            <li>Set <b>head</b> = <b>newNode</b>(pointer)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art req" title="Insertion (2a) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of node in Linked List (Case 2a)</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Insertion (2b)">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of new node into Singly Linked List at end</h2>
+                    </div>
+                    <div class="art-body">
+                        <ol type="i">Here the changes we made are:
+                            <li>Set the <b>next</b> of Node whose address is hold by <b>tail</b> = <b>newNode</b>(pointer)</li>
+                            <li>Set <b>tail</b> = <b>newNode</b>(pointer)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art req" title="Insertion (2b) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of node in Linked List (Case 2b)</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Insertion (2c)">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of new node into Singly Linked List after a node</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>Let the address of the node where new node should be added after it be ptr(pointer).</p>
+                        <ol type="i">Here the changes we made are:
+                            <li>Set the <b>next</b> of Node whose address is hold by <b>ptr</b> = <b>next</b> of <b>newNode</b>(pointer)</li>
+                            <li>Set <b>next</b> of <b>ptr</b> = <b>newNode</b>(pointer)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art req" title="Insertion (2c) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Insertion of node in Linked List (Case 2c)</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art req" title="Pictorial Representation of SLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Pictorial Representation of Linked List Experiment</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="SLL Introduction Deletion">
+                <div class="longt">
+                    <h1 class="hlongt">Introduction to Singly Linked List</h1>
+                </div>
+
+                <div class="art txt" title="Check">
+                    <div class="longt">
+                        <h2 class="hlongt">Check</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>We can check whether the list is empty or not using something like this:</p>
+                        <p>int isUnderflow(){<br> return start == NULL ? 1 : 0;<br> }</p>
+                        <p>This function returns 1 if the list is empty, or returns 0 if the list is not empty.</p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Deletion">
+                    <div class="longt">
+                        <h2 class="hlongt">Deletion of elements from Singly Linked List</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>Three cases may arise when we want to insert data at the front.</p>
+                        <p><b>Case – 1 :</b> When the list is empty i.e. head = NULL</p>
+                        <p>Here, we don’t have to do anything because there is nothing that is to be deleted.</p>
+                        <p><b>Case – 2 :</b> When list contains single entry i.e. head != NULL and head = tail.</p>
+                        <ol type="i">Here the changes we made are:
+                            <li>Store the address of this single Node as <b>struct Node *ptr</b> = <b>head</b>.</li>
+                            <li>Set <b>head</b> = <b>tail</b> = NULL.</li>
+                            <li>Free the memory allocated to this node as <b>free(ptr)</b>.</li>
+                        </ol>
+                        <ol type="a"><b>Case – 3 :</b> When list contains two or more entries i.e. head != tail
+                            <li>Deletion at Front</li>
+                            <li>Deletion of a Node (not at front)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art req" title="Deletion (2) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Deletion of node from Linked List (Case 2)</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Deletion (3a)">
+                    <div class="longt">
+                        <h2 class="hlongt">Deletion of node from Singly Linked List at front</h2>
+                    </div>
+                    <div class="art-body">
+                        <ol type="i">Here the changes we made are:
+                            <li>Store the address of the Node whose address is hold by <b>head</b> as <b>struct Node *ptr</b> = <b>head</b>.</li>
+                            <li>Set <b>head</b> = <b>head->next</b>.</li>
+                            <li>Free the memory allocated to this node as <b>free(ptr)</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art req" title="Deletion (3a) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Deletion of node from Linked List (Case 3a)</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Deletion (3b)">
+                    <div class="longt">
+                        <h2 class="hlongt">Deletion of node from Singly Linked List (not at front)</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>Let the address of parent node (previous node) of the node which needed to be deleted be ptr(pointer).</p>
+                        <ol type="i">Here the changes we made are:
+                            <li>Store the address of the Node whose address is hold by <b>next</b> of <b>ptr</b> as <b>struct Node *temp</b> = <b>ptr->next</b>.</li>
+                            <li>Set <b>ptr->next</b> = <b>temp->next</b>.</li>
+                            <li>Free the memory allocated to this node as <b>free(temp)</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="art req" title="Deletion (3b) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Deletion of node from Linked List (Case 3b)</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art req" title="Deletion (3c) image">
+                    <div class="longt">
+                        <h2 class="hlongt">Deletion of tail node from Linked List</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="SLL Tutorial">
+                <div class="longt">
+                    <h2 class="hlongt">Demo of Singly Linked List</h2>
+                </div>
+                <div class="art req" title="Singly Linked List Video">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Singly Linked List</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Video demonstration of singly linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art req" title="Insertion Video">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Insertion Operation</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Video demonstration of insertion operation to be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art req" title="Search Video">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Search Operation</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Video demonstration of search operation to be displayed here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="art req" title="Delete Video">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Delete Operation</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Video demonstration of delete operation to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="SLL Practice">
+                <div class="longt">
+                    <h1 class="hlongt">Practice Singly Linked List</h1>
+                </div>
+
+                <div class="art req" title="Practice SLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Practice SLL</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Interactive artefact for the singly linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="SLL Exercise">
+                <div class="longt">
+                    <h1 class="hlongt">Check your understanding of Singly Linked List
+                    </h1>
+                </div>
+
+                <div class="art req" title="Exercise SLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Exercise SLL</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Interactive exercise artefact of the singly linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lu" title="Doubly Linked List">
+            <div class="longt">
+                <h1 class="hlongt">Doubly Linked List</h1>
+            </div>
+
+            <div class="preamble">
+                <div class="art txt" title="Estimation">
+                    <div class="longt">
+                        <h2 class="hlongt">Estimated Time</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>15 min</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="DLL Introduction">
+                <div class="longt">
+                    <h1 class="hlongt">Introduction to Doubly Linked List</h1>
+                </div>
+
+                <div class="art req" title="Pictorial Representation of DLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Pictorial Representation of Singly Linked List vs Doubly Linked List
+                        </h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of Linked List Experiment should be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="DLL Tutorial">
+                <div class="longt">
+                    <h2 class="hlongt">Demo of Doubly Linked List</h2>
+                </div>
+                <div class="art req" title="DLL Video">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Doubly Linked List</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Video demonstration of Doubly linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="DLL Practice">
+                <div class="longt">
+                    <h1 class="hlongt">Practice Doubly Linked List Operation</h1>
+                </div>
+
+                <div class="art req" title="Practice DLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Practice DLL</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Interactive artefact for the doubly linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="DLL Exercise">
+                <div class="longt">
+                    <h1 class="hlongt">Check your understanding of Doubly Linked List
+                    </h1>
+                </div>
+
+                <div class="art req" title="Exercise DLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Exercise DLL</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Interactive exercise artefact of the doubly linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lu" title="Circular Linked List">
+            <div class="longt">
+                <h1 class="hlongt">Circular Linked List</h1>
+            </div>
+
+            <div class="preamble">
+                <div class="art txt" title="Estimation">
+                    <div class="longt">
+                        <h2 class="hlongt">Estimated Time</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>15 min</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="CLL Introduction">
+                <div class="longt">
+                    <h1 class="hlongt">Introduction to Doubly Linked List</h1>
+                </div>
+
+                <div class="art req" title="Pictorial Representation of CLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Pictorial Representation of Singly Doubly Linked List
+                        </h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Pictorial Representation of singly doubly linked list should be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="CLL Tutorial">
+                <div class="longt">
+                    <h2 class="hlongt">Demo of Doubly Linked List
+                    </h2>
+                </div>
+                <div class="art req" title="CLL Video">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Circular Linked List</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Video demonstration of Circular linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="CLL Practice">
+                <div class="longt">
+                    <h1 class="hlongt">Practice Circular Linked List Operation</h1>
+                </div>
+
+                <div class="art req" title="Practice CLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Practice CLL</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Interactive artefact for the Circular Linked List Operation to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task" title="CLL Exercise">
+                <div class="longt">
+                    <h1 class="hlongt">Check your understanding of Circular Linked List
+                    </h1>
+                </div>
+
+                <div class="art req" title="Exercise CLL">
+                    <div class="longt">
+                        <h2 class="hlongt">Exercise CLL</h2>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Interactive exercise artefact of the circular linked list to be displayed here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lu" title="Post Test">
+            <div class="longt">
+                <h1 class="hlongt">Post Test</h1>
+            </div>
+
+            <div class="preamble">
+                <div class="art txt" title="Estimation">
+                    <div class="longt">
+                        <h3 class="hlongt">Estimated Time</h3>
+                    </div>
+                    <div class="art-body">
+                        <p>15 min</p>
+                    </div>
+                </div>
+
+                <div class="art txt" title="Introduction">
+                    <div class="longt">
+                        <h2 class="hlongt">Introduction to Post Test of the Experiment</h2>
+                    </div>
+                    <div class="art-body">
+                        <p>Post test includes questions on entire experiment concepts. Read the questions given below and select the correct option from the ones provided. Please note that some questions may have more than one correct response.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz" title="Post Test Quiz">
+                <div class="longt">
+                    <h2 class="hlongt">Post Test Quiz of the Experiment</h2>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question1">
+                            <div class="art-body">
+                                <p>Q1. You are given pointers to first and last nodes of a singly linked list, which of the following operations are dependent on the length of the linked list?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c1">
+                                <div class="art-body">
+                                    <p>(A) Delete the first element</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c2">
+                                <div class="art-body">
+                                    <p>(B) Insert a new element as a first element</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c3">
+                                <div class="art-body">
+                                    <p>(C) Delete the last element of the list</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q1-c4">
+                                <div class="art-body">
+                                    <p>(D) Add a new element at the end of the list</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Since we need the parent of last node, we need to traverse whole list.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question2">
+                            <div class="art-body">
+                                <p>Q2. Which of the following points is/ are true about Linked List data structure when it is compared </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c1">
+                                <div class="art-body">
+                                    <p>(A) Arrays have better cache locality that can make them better in terms of performance
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c2">
+                                <div class="art-body">
+                                    <p>(B) It is easy to insert and delete elements in Linked List</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c3">
+                                <div class="art-body">
+                                    <p>(C) Random access is not allowed in a typical implementation of Linked Lists
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q2-c4">
+                                <div class="art-body">
+                                    <p>(D) All of these</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Please refer basics learning unit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question3">
+                            <div class="art-body">
+                                <p>Q3. Pick correct statement:</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q3-c1">
+                                <div class="art-body">
+                                    <p>(A) In doubly linked list, each node is linked to one node.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q3-c2">
+                                <div class="art-body">
+                                    <p>(B) In doubly linked list, each node is linked to three nodes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q3-c3">
+                                <div class="art-body">
+                                    <p>(C) In doubly linked list, each node is linked to two nodes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q3-c4">
+                                <div class="art-body">
+                                    <p>(D) In doubly linked list, each node is linked to zero nodes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>One to the next node and another for parent node.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question4">
+                            <div class="art-body">
+                                <p>Q4. Is it possible to create a doubly linked list using only one pointer with every node.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q4-c1">
+                                <div class="art-body">
+                                    <p>(A) Not Possible</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q4-c2">
+                                <div class="art-body">
+                                    <p>(B) Yes, possible by storing XOR of addresses of previous and next nodes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q4-c3">
+                                <div class="art-body">
+                                    <p>(C) Yes, possible by storing XOR of addresses of current node and next node</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q4-c4">
+                                <div class="art-body">
+                                    <p>(D) Yes, possible by storing XOR of addresses of current node and previous node</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>It is obvious, take an example and check.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question5">
+                            <div class="art-body">
+                                <p>Q5. What differentiates a circular linked list from a normal linked list?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q5-c1">
+                                <div class="art-body">
+                                    <p>(A) You cannot have the ‘next’ pointer point to null in a circular linked list
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q5-c2">
+                                <div class="art-body">
+                                    <p>(B) It is faster to traverse the circular linked list</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q5-c3">
+                                <div class="art-body">
+                                    <p>(C) You may or may not have the ‘next’ pointer point to null in a circular linked list
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q5-c4">
+                                <div class="art-body">
+                                    <p>(D) All of the mentioned</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>In normal linked list last element is pointed towards NULL where as in circular linked list last element is pointed to the first element of the linked list which is not NULL ecept when the list is empty then the next pointer
+                                    points to NULL.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question6">
+                            <div class="art-body">
+                                <p>Q6. What is the time complexity of searching for an element in a circular linked list?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q6-c1">
+                                <div class="art-body">
+                                    <p>(A) O(n)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q6-c2">
+                                <div class="art-body">
+                                    <p>(B) O(nlogn)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q6-c3">
+                                <div class="art-body">
+                                    <p>(C) O(1)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q6-c4">
+                                <div class="art-body">
+                                    <p>(D) None of the mentioned</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Since we need to traverse whole list.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question7">
+                            <div class="art-body">
+                                <p>Q7. Which of the following is false about a circular linked list?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q7-c1">
+                                <div class="art-body">
+                                    <p>(A) Every node has a successor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q7-c2">
+                                <div class="art-body">
+                                    <p>(B) Time complexity of inserting a new node at the head of the list is O(1)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q7-c3">
+                                <div class="art-body">
+                                    <p>(C) Time complexity for deleting the last node is O(n)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q7-c4">
+                                <div class="art-body">
+                                    <p>(D) All of the mentioned</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>Since it is circular linked list, new elw=ement can be inserted anywhere and head can be pointed to the new element.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mcq">
+                    <div class="preamble">
+                        <div class="art txt" title="question8">
+                            <div class="art-body">
+                                <p>Q8. A circularly linked list is used to represent a Queue. A single variable p is used to access the Queue. To which node should p point such that both the operations enQueue and deQueue can be performed in constant time?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="true">
+                        <div class="preamble">
+                            <div class="art txt" title="q8-c1">
+                                <div class="art-body">
+                                    <p>(A) rear node</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q8-c2">
+                                <div class="art-body">
+                                    <p>(B) front node</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q8-c3">
+                                <div class="art-body">
+                                    <p>(C) not possible with a single pointer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choice" data-correct="false">
+                        <div class="preamble">
+                            <div class="art txt" title="q8-c4">
+                                <div class="art-body">
+                                    <p>(D) node next to front</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explanation">
+                        <div class="art txt" title="Explanation">
+                            <div class="art-body">
+                                <p>It is obvious, please refer stacks and queues experiment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lu" title="References">
+                <div class="longt">
+                    <h2 class="hlongt">Further Readings/References</h2>
+                </div>
+
+                <div class="preamble">
+                    <div class="art txt" title="Explore">
+                        <div class="longt">
+                            <h2 class="hlongt">Explore Linked List</h2>
+                        </div>
+                        <div class="art-body">
+                            <p>You can explore more about Linked List through following resources:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lu" title="Feedback">
+                <div class="longt">
+                    <h2 class="hlongt">Feedback</h2>
+                </div>
+
+                <div class="preamble">
+                    <div class="art txt" title="Feedback on Experiment">
+                        <div class="longt">
+                            <h2 class="hlongt">Feedback on Experiment</h2>
+                        </div>
+                        <div class="art-body">
+                            <p>Please provide feedback on the experiment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/loader.js"></script>
+</body>
+
+</html>
